@@ -28,9 +28,9 @@ public class Post {
     private boolean isFavorite;
     private int postponedId;
     private int commentsInfo;
-    private int likesInfo;
-    private int repostsInfo;
-    private int viewsInfo;
+    private LikesInfo likesInfo;
+    private RepostsInfo repostsInfo;
+    private ViewsInfo viewsInfo;
 
 
 
