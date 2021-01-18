@@ -1,6 +1,6 @@
 package ru.netology.domain;
 
-public class MainPostNetology {
+public class Post {
     private Integer id;
     private String imageUrl;
     private String name;
@@ -9,7 +9,7 @@ public class MainPostNetology {
     private String time;
     private boolean like;
     private String share;
-    private Integer  ownerId;
+    private long  ownerId;
     private Integer fromId;
     private Integer createdBy;
     private Integer replyownerId;
@@ -38,6 +38,8 @@ public class MainPostNetology {
         private  Integer count;
 
     }
+
+
 
     public class LikesInfo {
 
