@@ -1,51 +1,94 @@
 package ru.netology.domain;
 
 public class MainPostNetology {
-    private String id;
+    private Integer id;
     private String imageUrl;
     private String name;
     private String post;
-    private String data;
+    private Integer date;
     private String time;
-    private boolean islike;
+    private boolean like;
     private String share;
-    private String ownerId;
-    private String fromId;
-    private String createdBy;
-    private String replyownerId;
-    private String friendsOnly;
-    private String copyright;
+    private Integer  ownerId;
+    private Integer fromId;
+    private Integer createdBy;
+    private Integer replyownerId;
+    private Integer replyPostId;
+    private Integer friendsOnly;
+    private Integer copyright;
     private String postType;
-    private String postSource;
+    private Object postSource;
     private String geo;
-    private String signerId;
-    private String canPin;
-    private String canDelete;
-    private String canEdit;
-    private String isPinned;
-    private String markedAsAds;
+    private Integer signerId;
+    private Integer canPin;
+    private Integer canDelete;
+    private Integer canEdit;
+    private Integer isPinned;
+    private Integer markedAsAdsInfo;
     private boolean isFavorite;
-    private String postponedId;
+    private Integer postponedId;
 
-    public class PostsInfoPage{
-        private String commentsInfo;
+
+    public class CommentsInfo{
+
+        private  boolean canPost;
+        private  boolean groupsCanPostInfo;
+        private  boolean canClose;
+        private  boolean canOpen;
+        private  Integer count;
 
     }
 
+    public class LikesInfo {
 
-    public class CommentsInfoPage{
-        private String commentsInfo;
+        private boolean userLikesInfo;
+        private boolean canLike;
+        private boolean canPublish;
+        private Integer count;
+
     }
 
+    public class RepostsInfo{
 
-    public class SharesInfoPage{
-        private String sharesInfo;
+        private boolean userReposted;
+        private Integer count;
+
     }
 
-    public class ViewsInfoPage {
-        private boolean viewesInfo;
+    public class ViewsInfo{
+
+        private Integer count;
     }
 
+    public class Geo{
 
+        private Integer type;
+        private Integer coordinatesInfo;
+        private Object place;
+    }
 
+    public class CanPin {
+
+        private boolean canPin;
+    }
+
+    public class CanDelete{
+
+        private boolean canDelete;
+    }
+
+    public class CanEdit{
+
+        private boolean canEdit;
+    }
+
+    public class MarkedAsAdsInfo{
+
+        private boolean markedAsAdsInfo;
+    }
+
+    public class IsFavorite{
+
+        private boolean isFavorite = true;
+    }
 }
